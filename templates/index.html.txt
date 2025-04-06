@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flood Prediction Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f9fb;
+            padding: 30px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1e90ff;
+        }
+        .label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌊 Coutrallam Flood Prediction Dashboard</h1>
+
+    <div class="card">
+        <p><span class="label">💧 Flow Rate:</span> {{ flow_rate }} mL/sec</p>
+        <p><span class="label">🔔 Buzzer:</span> {{ buzzer }}</p>
+        <p><span class="label">💡 LED:</span> {{ led }}</p>
+        <p><span class="label">🧠 Prediction:</span> {{ prediction }}</p>
+        <p><span class="label">📌 Additional Notes:</span> {{ notes }}</p>
+    </div>
+</body>
+</html>
